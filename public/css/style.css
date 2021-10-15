@@ -1,8 +1,16 @@
-/*GENERAL*/
 @font-face {
   font-family: "Shrikhand-Regular";
-  src: url("./fonts/Shrikhand/Shrikhand-Regular.ttf") format("truetype");
+  src: url("./fonts/Shrikhand-Regular.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("./fonts/Roboto-Regular.ttf") format("truetype");
+}
+body {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 h1 {
   font-family: "Shrikhand-Regular";
   font-style: normal;
