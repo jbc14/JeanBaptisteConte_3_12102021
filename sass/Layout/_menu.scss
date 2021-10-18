@@ -40,7 +40,7 @@
         border-radius: 40px;
         display: block;
         margin: auto;
-        background-color: $color-secondary;
+        background: linear-gradient(170deg, $color-secondary, $color-primary);
         color: white;
         font-size: 1rem;
         border: none;
