@@ -1,0 +1,27 @@
+footer {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 25px;
+    padding-bottom: 35px;
+    background-color: #353535;
+    color: white;
+
+    h3 {
+        font-family: Shrikhand-Regular;
+        font-weight: 100;
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+        font-family: Roboto-Regular;
+
+        li {
+            height: 25px;
+
+            .fas {
+                width: 30px;
+            }
+        }
+    }
+}
