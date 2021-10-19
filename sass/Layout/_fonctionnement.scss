@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 20px;
+    padding-bottom: 70px;
 
     h2 {
         font-size: 1.5rem;
@@ -25,8 +26,8 @@
 
         .order {
             display: flex;
-           align-items: center;
-           justify-content: center;
+            align-items: center;
+            justify-content: center;
             position: absolute;
             left: 10px;
             background-color: $color-primary;
