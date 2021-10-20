@@ -4,11 +4,13 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css",
+    "serve": "live-server ."
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "live-server": "^1.2.1",
     "sass": "^1.43.2"
   }
 }
