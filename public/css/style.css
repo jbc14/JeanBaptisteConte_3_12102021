@@ -120,7 +120,7 @@ h1 {
 .fonctionnement__step3 {
   background-color: #f5edff;
 }
-@media (min-width: 900px) {
+@media (min-width: 880px) {
   .fonctionnement {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -211,7 +211,7 @@ h1 {
   text-align: right;
   margin-top: 15px;
 }
-@media all and (min-width: 900px) {
+@media all and (min-width: 880px) {
   .restaurants {
     display: grid;
     grid-template-columns: 1fr 1fr;
