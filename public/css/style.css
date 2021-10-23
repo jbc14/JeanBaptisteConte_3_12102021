@@ -266,7 +266,7 @@ header i {
   position: relative;
   font-family: Roboto-Regular;
   background-color: #f6f6f6;
-  padding-bottom: 40px;
+  padding-bottom: 50px;
   margin-top: -40px;
   border-radius: 40px;
   padding-top: 40px;
@@ -286,7 +286,8 @@ header i {
 }
 .restaurant__page .carte h3 {
   font-weight: 300;
-  padding-top: 15px;
+  padding-top: 25px;
+  margin-bottom: 5px;
 }
 .restaurant__page .carte__entrees, .restaurant__page .carte__plats, .restaurant__page .carte__desserts {
   display: flex;
@@ -294,7 +295,7 @@ header i {
   row-gap: 15px;
 }
 .restaurant__page .carte__desserts {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 .restaurant__page .carte__card {
   display: grid;

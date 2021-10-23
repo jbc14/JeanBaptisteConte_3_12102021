@@ -18,7 +18,7 @@ header i {
         position: relative;
         font-family: Roboto-Regular;
         background-color: #f6f6f6;
-        padding-bottom: 40px;
+        padding-bottom: 50px;
         margin-top: -40px;
         border-radius: 40px;
         padding-top: 40px;
@@ -40,7 +40,8 @@ header i {
 
         h3 {
             font-weight: 300;
-            padding-top: 15px;
+            padding-top: 25px;
+            margin-bottom: 5px;
         }
 
         &__entrees,
@@ -52,7 +53,7 @@ header i {
         }
 
         &__desserts {
-            margin-bottom: 40px;
+            margin-bottom: 50px;
         }
 
         &__card {
@@ -84,6 +85,7 @@ header i {
                 grid-column: 2;
                 grid-row: 2;
                 line-height: 1.8em;
+            
             }
         }
     }
