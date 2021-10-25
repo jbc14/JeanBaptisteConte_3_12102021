@@ -67,6 +67,7 @@ h1 {
   font-size: 1rem;
   border: none;
   cursor: pointer;
+  box-shadow: 10px 10px 20px -10px gray;
 }
 
 .fonctionnement {
@@ -167,6 +168,10 @@ h1 {
   border-radius: 30px;
   box-shadow: 10px 10px 20px -10px gray;
   position: relative;
+  transition: transform 400ms;
+}
+.restaurants .restaurants__card:hover {
+  transform: scale(1.03);
 }
 .restaurants .restaurants__card img {
   height: 175px;
@@ -253,6 +258,7 @@ header i {
   top: 34px;
   left: 25px;
   font-size: 1.4rem;
+  color: black;
 }
 
 .restaurant__page .banniere img {
@@ -277,12 +283,19 @@ header i {
   font-weight: 400;
   font-size: 1.9rem;
   margin-top: 0;
+  margin-bottom: 5px;
 }
 .restaurant__page .carte .far {
   font-size: 1.7rem;
   position: absolute;
   right: 30px;
   top: 48px;
+}
+@media all and (min-width: 1000px) {
+  .restaurant__page .carte__flex {
+    display: flex;
+    column-gap: 15px;
+  }
 }
 .restaurant__page .carte h3 {
   font-weight: 300;
@@ -293,6 +306,12 @@ header i {
   display: flex;
   flex-direction: column;
   row-gap: 15px;
+}
+.restaurant__page .carte__underline {
+  width: 40px;
+  height: 3px;
+  background-color: #99E2D0;
+  margin-top: -15px;
 }
 .restaurant__page .carte__desserts {
   margin-bottom: 50px;
@@ -320,10 +339,12 @@ header i {
   line-height: 0em;
   font-size: 1rem;
 }
-.restaurant__page .carte__card div {
+.restaurant__page .carte__card .prix {
   grid-column: 2;
   grid-row: 2;
   line-height: 1.8em;
+  font-weight: 600;
+  text-align: center;
 }
 .restaurant__page a {
   text-decoration: none;
@@ -340,6 +361,7 @@ header i {
   font-size: 1rem;
   border: none;
   cursor: pointer;
+  box-shadow: 10px 10px 20px -10px gray;
 }
 
 /*# sourceMappingURL=style.css.map */

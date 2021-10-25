@@ -3,6 +3,7 @@ header i {
     top: 34px;
     left: 25px;
     font-size: 1.4rem;
+    color: black;
 }
 
 .restaurant__page {
@@ -29,6 +30,7 @@ header i {
             font-weight: 400;
             font-size: 1.9rem;
             margin-top: 0;
+            margin-bottom: 5px;
         }
 
         .far {
@@ -36,6 +38,13 @@ header i {
             position: absolute;
             right: 30px;
             top: 48px;
+        }
+
+        &__flex {
+            @media all and (min-width: 1000px) {
+                display: flex;
+                column-gap: 15px;
+            }
         }
 
         h3 {
@@ -50,6 +59,13 @@ header i {
             display: flex;
             flex-direction: column;
             row-gap: 15px;
+        }
+
+        &__underline {
+            width: 40px;
+            height: 3px;
+            background-color: $color-tertiary;
+            margin-top: -15px;
         }
 
         &__desserts {
@@ -81,11 +97,12 @@ header i {
                 font-size: 1rem;
             }
 
-            div {
+            .prix {
                 grid-column: 2;
                 grid-row: 2;
                 line-height: 1.8em;
-            
+                font-weight: 600;
+                text-align: center;
             }
         }
     }
