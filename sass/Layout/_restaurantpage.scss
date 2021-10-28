@@ -59,6 +59,10 @@ header i {
             display: flex;
             flex-direction: column;
             row-gap: 15px;
+
+            @media all and (min-width: 1000px) {
+                width: 33%;
+            }
         }
 
         &__underline {
@@ -85,16 +89,26 @@ header i {
             h4 {
                 grid-column: 1;
                 grid-row: 1;
-                line-height: 0em;
+                line-height: 1rem;
                 font-size: 1.1rem;
                 font-weight: 600;
+                margin: 0;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                padding-top: 15px;
             }
 
             p {
                 grid-column: 1;
                 grid-row: 2;
-                line-height: 0em;
+                line-height: 1Rem;
                 font-size: 1rem;
+                margin: 0;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                padding-top: 5px;
             }
 
             .prix {

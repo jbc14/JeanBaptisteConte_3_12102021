@@ -307,6 +307,11 @@ header i {
   flex-direction: column;
   row-gap: 15px;
 }
+@media all and (min-width: 1000px) {
+  .restaurant__page .carte__entrees, .restaurant__page .carte__plats, .restaurant__page .carte__desserts {
+    width: 33%;
+  }
+}
 .restaurant__page .carte__underline {
   width: 40px;
   height: 3px;
@@ -329,15 +334,25 @@ header i {
 .restaurant__page .carte__card h4 {
   grid-column: 1;
   grid-row: 1;
-  line-height: 0em;
+  line-height: 1rem;
   font-size: 1.1rem;
   font-weight: 600;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-top: 15px;
 }
 .restaurant__page .carte__card p {
   grid-column: 1;
   grid-row: 2;
-  line-height: 0em;
+  line-height: 1Rem;
   font-size: 1rem;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-top: 5px;
 }
 .restaurant__page .carte__card .prix {
   grid-column: 2;
