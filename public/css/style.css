@@ -170,9 +170,6 @@ h1 {
   position: relative;
   transition: transform 400ms;
 }
-.restaurants .restaurants__card:hover {
-  transform: scale(1.03);
-}
 .restaurants .restaurants__card img {
   height: 175px;
   width: 100%;
@@ -209,12 +206,25 @@ h1 {
   grid-row: 2;
   margin-top: 5px;
 }
-.restaurants .restaurants__card .restaurants__info .far {
+.restaurants .restaurants__card .restaurants__info .fa-heart {
   font-size: 1.8rem;
   grid-column: 2;
   grid-row: 1;
-  text-align: right;
-  margin-top: 15px;
+  margin-top: 20px;
+  margin-left: auto;
+}
+.restaurants .restaurants__card .restaurants__info .fa-heart:hover--full {
+  opacity: 1;
+}
+.restaurants .restaurants__card .restaurants__info .fa-heart:hover--empty {
+  opacity: 0;
+}
+.restaurants .restaurants__card .restaurants__info .fa-heart--empty {
+  opacity: 1;
+}
+.restaurants .restaurants__card .restaurants__info .fa-heart--full {
+  opacity: 0;
+  color: linear-gradient 170deg, #FF79DA, #9356DC;
 }
 @media all and (min-width: 880px) {
   .restaurants {
