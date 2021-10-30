@@ -86,6 +86,40 @@ header i {
             padding-right: 10px;
             border-radius: 20px;
 
+            animation: menu_opacity 1.5s;
+            animation-fill-mode: backwards;
+
+            &--delay1 {
+                animation-delay: 0s;
+            }
+            &--delay2 {
+                animation-delay: 0.2s;
+            }
+            &--delay3 {
+                animation-delay: 0.4s;
+            }
+            &--delay4 {
+                animation-delay: 0.6s;
+            }
+            &--delay5 {
+                animation-delay: 0.8s;
+            }
+            &--delay6 {
+                animation-delay: 1s;
+            }
+            &--delay7 {
+                animation-delay: 1.2s;
+            }
+            &--delay8 {
+                animation-delay: 1.4s;
+            }
+            &--delay9 {
+                animation-delay: 1.6s;
+            }
+            &--delay10 {
+                animation-delay: 1.8s;
+            }
+
             h4 {
                 grid-column: 1;
                 grid-row: 1;
@@ -102,7 +136,7 @@ header i {
             p {
                 grid-column: 1;
                 grid-row: 2;
-                line-height: 1Rem;
+                line-height: 1rem;
                 font-size: 1rem;
                 margin: 0;
                 white-space: nowrap;
