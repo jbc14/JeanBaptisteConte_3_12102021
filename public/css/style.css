@@ -16,6 +16,14 @@
     transform: translateY(0);
   }
 }
+@keyframes heart_opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 body {
   margin-left: 0;
   margin-right: 0;
@@ -206,7 +214,7 @@ h1 {
   padding-left: 15px;
   padding-right: 25px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 3fr 1fr;
   grid-template-rows: 37px 37px;
 }
 .restaurants .restaurants__card .restaurants__info h3 {
@@ -219,12 +227,28 @@ h1 {
   grid-row: 2;
   margin-top: 5px;
 }
-.restaurants .restaurants__card .restaurants__info .fa-heart {
+.restaurants .restaurants__card .restaurants__info .heart--empty {
   font-size: 1.8rem;
   grid-column: 2;
   grid-row: 1;
   margin-top: 20px;
   margin-left: auto;
+}
+.restaurants .restaurants__card .restaurants__info .heart--full {
+  font-size: 1.9rem;
+  grid-column: 2;
+  grid-row: 1;
+  height: 30px;
+  margin-top: 20px;
+  margin-left: auto;
+  opacity: 0;
+  background: -webkit-gradient(linear, right top, left bottom, from(#9356DC), to(#FF79DA));
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.restaurants .restaurants__card .restaurants__info .heart--full:hover {
+  animation: heart_opacity 1s both;
 }
 @media all and (min-width: 880px) {
   .restaurants {
@@ -295,11 +319,25 @@ header i {
   margin-top: 0;
   margin-bottom: 5px;
 }
-.restaurant__page .carte .far {
+.restaurant__page .carte .heart--empty {
   font-size: 1.7rem;
   position: absolute;
   right: 30px;
   top: 48px;
+}
+.restaurant__page .carte .heart--full {
+  font-size: 1.7rem;
+  position: absolute;
+  right: 30px;
+  top: 48px;
+  opacity: 0;
+  background: -webkit-gradient(linear, right top, left bottom, from(#9356DC), to(#FF79DA));
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.restaurant__page .carte .heart--full:hover {
+  animation: heart_opacity 1s both;
 }
 @media all and (min-width: 1000px) {
   .restaurant__page .carte__flex {
@@ -340,6 +378,9 @@ header i {
   padding-left: 15px;
   padding-right: 10px;
   border-radius: 20px;
+  box-shadow: 10px 10px 20px -10px gray;
+  position: relative;
+  overflow: hidden;
   animation: menu_opacity 1.5s;
   animation-fill-mode: backwards;
 }
@@ -402,6 +443,31 @@ header i {
   line-height: 1.8em;
   font-weight: 600;
   text-align: center;
+  transition: transform 0.6s ease-in-out;
+}
+.restaurant__page .carte__card:hover > .prix {
+  transform: translateX(-60px);
+}
+.restaurant__page .carte__card:hover > .carte__validate {
+  transform: translateX(-60px);
+}
+.restaurant__page .carte__card:hover .fas {
+  transform: rotate(-360deg);
+}
+.restaurant__page .carte__card .carte__validate {
+  position: absolute;
+  right: -60px;
+  height: 70px;
+  width: 60px;
+  line-height: 78px;
+  background-color: #99E2D0;
+  text-align: center;
+  transition: transform 0.6s ease-in-out;
+}
+.restaurant__page .carte__card .carte__validate .fas {
+  font-size: 1.6rem;
+  color: white;
+  transition: transform 0.7s ease-in-out;
 }
 .restaurant__page a {
   text-decoration: none;

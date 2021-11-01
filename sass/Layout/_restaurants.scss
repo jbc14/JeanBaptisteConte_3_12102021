@@ -50,7 +50,7 @@
             padding-left: 15px;
             padding-right: 25px;
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 3fr 1fr;
             grid-template-rows: 37px 37px;
 
             h3 {
@@ -65,12 +65,37 @@
                 margin-top: 5px;
             }
 
-            .fa-heart {
+            .heart--empty {
                 font-size: 1.8rem;
                 grid-column: 2;
                 grid-row: 1;
                 margin-top: 20px;
                 margin-left: auto;
+            }
+
+            .heart--full {
+                font-size: 1.9rem;
+                grid-column: 2;
+                grid-row: 1;
+                height: 30px;
+                margin-top: 20px;
+                margin-left: auto;
+                
+                opacity: 0;
+                background: -webkit-gradient(
+                    linear,
+                    right top,
+                    left bottom,
+                    from($color-primary),
+                    to($color-secondary)
+                );
+                background-clip: border-box;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+                &:hover {
+                    animation: heart_opacity 1s both;
+                }
             }
         }
     }
