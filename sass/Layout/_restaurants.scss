@@ -19,11 +19,7 @@
         border-radius: 30px;
         box-shadow: 10px 10px 20px -10px gray;
         position: relative;
-        transition: transform 500ms;
-
-        &:hover {
-            transform: scale(1.03);
-        }
+        
 
         img {
             height: 175px;
@@ -65,36 +61,47 @@
                 margin-top: 5px;
             }
 
-            .heart--empty {
-                font-size: 1.8rem;
-                grid-column: 2;
-                grid-row: 1;
-                margin-top: 20px;
-                margin-left: auto;
-            }
-
-            .heart--full {
-                font-size: 1.9rem;
+            .heart--container {
                 grid-column: 2;
                 grid-row: 1;
                 height: 30px;
+                width: 40px;
                 margin-top: 20px;
-                margin-left: auto;
-                
-                opacity: 0;
-                background: -webkit-gradient(
-                    linear,
-                    right top,
-                    left bottom,
-                    from($color-primary),
-                    to($color-secondary)
-                );
-                background-clip: border-box;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
+                margin-left: auto;  
+            
+            
+                position: relative;
+            
 
                 &:hover {
-                    animation: heart_opacity 1s both;
+                    .heart--full {
+                         animation: heart_opacity 0.4s both;
+                    }
+                    .heart--empty {
+                    animation: heart_opacity 0.4s both reverse;
+                    }
+                }
+            
+                .heart--empty {
+                    font-size: 1.8rem;
+                    position: absolute;
+                }
+
+                .heart--full {
+                    font-size: 1.8rem;
+                    position: absolute;
+
+                    opacity: 0;
+                    background: -webkit-gradient(
+                        linear,
+                        right top,
+                        left bottom,
+                        from($color-primary),
+                        to($color-secondary)
+                    );
+                    background-clip: border-box;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
                 }
             }
         }
