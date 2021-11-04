@@ -16,6 +16,24 @@
     transform: translateY(0);
   }
 }
+@keyframes btn {
+  from {
+    width: 50px;
+    opacity: 0;
+  }
+  to {
+    width: 220px;
+    opacity: 1;
+  }
+}
+@keyframes btn_text {
+  from {
+    color: transparent;
+  }
+  to {
+    color: white;
+  }
+}
 @keyframes heart_opacity {
   from {
     opacity: 0;
@@ -174,6 +192,9 @@ h1 {
 }
 .menu .btn:hover {
   background: #0d0d0d;
+}
+.menu .btn {
+  animation: btn 2s ease-in-out 3s both, btn_text 2s ease 5s both;
 }
 
 .fonctionnement {

@@ -10,6 +10,28 @@
     }
 }
 
+@keyframes btn {
+    from {
+        width: 50px;
+        opacity: 0;
+    }
+
+    to {
+        width: 220px;
+        opacity: 1;
+    }
+}
+
+@keyframes btn_text {
+    from {
+        color: transparent;
+    }
+
+    to {
+        color: white;
+    }
+}
+
 @keyframes heart_opacity {
     from {
         opacity: 0;
@@ -28,6 +50,8 @@
     84% {
         opacity: 1;
     }
+
+    
     100% {
         opacity: 0;
     }
@@ -65,7 +89,6 @@
     50% {
         transform: translateX(-120px) scale(1.5);
     }
-
 
     100% {
         transform: translateX(80px) scale(1);

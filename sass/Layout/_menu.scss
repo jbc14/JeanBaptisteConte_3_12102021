@@ -40,5 +40,9 @@
         margin: 0 auto;
     }
 
-    @include btn
+    @include btn;
+
+    .btn {
+        animation: btn 2s ease-in-out 3s both, btn_text 2s ease 5s both;
+    }
 }
