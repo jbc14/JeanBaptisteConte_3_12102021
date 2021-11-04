@@ -14,7 +14,12 @@
         box-shadow: 10px 10px 20px -10px gray;
 
         &:hover {
-            background: lighten($color: #000000, $amount: 5%);
+            background: linear-gradient(
+                170deg,
+                lighten($color-secondary, 3%),
+                lighten($color-primary, 3%)
+            );
+            box-shadow: 10px 10px 20px -10px black;
         }
     }
 }

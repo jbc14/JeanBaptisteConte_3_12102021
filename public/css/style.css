@@ -49,8 +49,12 @@
   84% {
     opacity: 1;
   }
+  99% {
+    z-index: 9999;
+  }
   100% {
     opacity: 0;
+    z-index: -9999;
   }
 }
 @keyframes loader_rotation {
@@ -191,10 +195,11 @@ h1 {
   box-shadow: 10px 10px 20px -10px gray;
 }
 .menu .btn:hover {
-  background: #0d0d0d;
+  background: linear-gradient(170deg, #ff88de, #9b63df);
+  box-shadow: 10px 10px 20px -10px black;
 }
 .menu .btn {
-  animation: btn 2s ease-in-out 3s both, btn_text 2s ease 5s both;
+  animation: btn 1s ease-in-out 3s both, btn_text 1s ease 4s both;
 }
 
 .fonctionnement {
@@ -611,7 +616,8 @@ header i {
   box-shadow: 10px 10px 20px -10px gray;
 }
 .restaurant__page a .btn:hover {
-  background: #0d0d0d;
+  background: linear-gradient(170deg, #ff88de, #9b63df);
+  box-shadow: 10px 10px 20px -10px black;
 }
 
 /*# sourceMappingURL=style.css.map */
