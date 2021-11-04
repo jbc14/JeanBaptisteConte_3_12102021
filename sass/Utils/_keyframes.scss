@@ -20,12 +20,54 @@
     }
 }
 
-@keyframes loader {
-    from {
+@keyframes loader_opacity {
+    0% {
         opacity: 1;
     }
 
-    to {
+    84% {
+        opacity: 1;
+    }
+    100% {
         opacity: 0;
+    }
+}
+
+@keyframes loader_rotation {
+    from {
+        rotate: 0turn;
+    }
+
+    to {
+        rotate: 1turn;
+    }
+}
+
+@keyframes loader_item_translate3 {
+    0% {
+        transform: translateX(-80px) scale(1);
+    }
+
+    50% {
+        transform: translateX(120px) scale(1.5);
+    }
+
+    100% {
+        transform: translateX(-80px) scale(1);
+    }
+}
+
+@keyframes loader_item_translate1 {
+    0% {
+        transform: translateX(80px) scale(1);
+    }
+
+    50% {
+        transform: translateX(-120px) scale(1.5);
+    }
+
+
+    100% {
+        transform: translateX(80px) scale(1);
     }
 }
