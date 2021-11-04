@@ -55,10 +55,10 @@
 }
 @keyframes loader_rotation {
   from {
-    rotate: 0turn;
+    transform: rotate(0turn);
   }
   to {
-    rotate: 1turn;
+    transform: rotate(1turn);
   }
 }
 @keyframes loader_item_translate3 {
