@@ -510,34 +510,16 @@ header i {
   animation-fill-mode: backwards;
 }
 .restaurant__page .carte__card--delay1 {
-  animation-delay: 0s;
-}
-.restaurant__page .carte__card--delay2 {
   animation-delay: 0.2s;
 }
-.restaurant__page .carte__card--delay3 {
+.restaurant__page .carte__card--delay2 {
   animation-delay: 0.4s;
 }
-.restaurant__page .carte__card--delay4 {
+.restaurant__page .carte__card--delay3 {
   animation-delay: 0.6s;
 }
-.restaurant__page .carte__card--delay5 {
+.restaurant__page .carte__card--delay4 {
   animation-delay: 0.8s;
-}
-.restaurant__page .carte__card--delay6 {
-  animation-delay: 1s;
-}
-.restaurant__page .carte__card--delay7 {
-  animation-delay: 1.2s;
-}
-.restaurant__page .carte__card--delay8 {
-  animation-delay: 1.4s;
-}
-.restaurant__page .carte__card--delay9 {
-  animation-delay: 1.6s;
-}
-.restaurant__page .carte__card--delay10 {
-  animation-delay: 1.8s;
 }
 .restaurant__page .carte__card h4 {
   grid-column: 1;
