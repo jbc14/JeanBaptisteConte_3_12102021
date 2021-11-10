@@ -228,6 +228,12 @@ h1 {
   background-color: #f6f6f6;
   position: relative;
 }
+.fonctionnement__step:hover {
+  background-color: #f5edff;
+}
+.fonctionnement__step:hover .fas {
+  color: #9356DC;
+}
 .fonctionnement__step .order {
   display: flex;
   align-items: center;
@@ -246,12 +252,6 @@ h1 {
   margin-bottom: auto;
   color: #7e7e7e;
   margin-left: 40px;
-}
-.fonctionnement__step .fa-store {
-  color: #9356DC;
-}
-.fonctionnement__step3 {
-  background-color: #f5edff;
 }
 @media (min-width: 880px) {
   .fonctionnement {
@@ -353,11 +353,11 @@ h1 {
   animation: heart_opacity 0.4s both reverse;
 }
 .restaurants .restaurants__card .restaurants__info .heart--container .heart--empty {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   position: absolute;
 }
 .restaurants .restaurants__card .restaurants__info .heart--container .heart--full {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   position: absolute;
   opacity: 0;
   background: -webkit-gradient(linear, right top, left bottom, from(#9356DC), to(#FF79DA));
@@ -447,11 +447,11 @@ header i {
   width: 30px;
 }
 .restaurant__page .carte .heart--container .heart--empty {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   position: absolute;
 }
 .restaurant__page .carte .heart--container .heart--full {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   position: absolute;
   opacity: 0;
   background: -webkit-gradient(linear, right top, left bottom, from(#9356DC), to(#FF79DA));
@@ -584,10 +584,7 @@ header i {
   color: white;
   transition: transform 0.7s ease-in-out;
 }
-.restaurant__page a {
-  text-decoration: none;
-}
-.restaurant__page a .btn {
+.restaurant__page .btn {
   font-family: Roboto-Regular;
   height: 50px;
   width: 220px;
@@ -601,7 +598,7 @@ header i {
   cursor: pointer;
   box-shadow: 10px 10px 20px -10px gray;
 }
-.restaurant__page a .btn:hover {
+.restaurant__page .btn:hover {
   background: linear-gradient(170deg, #ff88de, #9b63df);
   box-shadow: 10px 10px 20px -10px black;
 }

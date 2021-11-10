@@ -25,6 +25,13 @@
         box-shadow: 10px 10px 20px -10px gray;
         background-color: #f6f6f6;
         position: relative;
+
+        &:hover {
+            background-color: #f5edff;
+            .fas {
+                color: $color-primary;
+            }
+        }
     
 
         .order {
@@ -47,14 +54,6 @@
             color: #7e7e7e;
             margin-left: 40px;
         }
-
-        .fa-store {
-            color: $color-primary;
-        }
-    }
-
-    &__step3 {
-        background-color: #f5edff;
     }
 
     @media (min-width: 880px) {

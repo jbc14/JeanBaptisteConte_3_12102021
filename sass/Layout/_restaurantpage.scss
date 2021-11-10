@@ -42,12 +42,12 @@ header i {
             width: 30px;
 
             .heart--empty {
-                font-size: 1.7rem;
+                font-size: 1.5rem;
                 position: absolute;
             }
 
             .heart--full {
-                font-size: 1.7rem;
+                font-size: 1.5rem;
                 position: absolute;
                 opacity: 0;
                 background: -webkit-gradient(
@@ -198,8 +198,5 @@ header i {
         }
     }
 
-    a {
-        text-decoration: none;
-        @include btn;
-    }
+    @include btn;
 }
